@@ -19,6 +19,7 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import FirstPageIcon from '@mui/icons-material/FirstPage';
 import LastPageIcon from '@mui/icons-material/LastPage';
+import Navbar from './components/Navbar'; 
 import './App.css';
 
 const API_ENDPOINT = 'https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json';
@@ -95,7 +96,9 @@ const App = () => {
  
 
   return (
+   
     <div className="container">
+      <Navbar/>
     <div className="search-container">
   <TextField
     label="Search..."
@@ -212,6 +215,7 @@ const App = () => {
         </IconButton>
       </div>
     </div>
+  
   );
 };
 
